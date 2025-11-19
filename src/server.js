@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.send('¡Hola Mundo! Este es nuestro servidor de calculadora.');
 });
 
+app.get('/mensaje', (req, res) => {
+  res.send('¡Hola Mundo! Este es mi mensaje.');
+});
+
 // Definimos una ruta para sumar
 app.get('/sumar', (req, res) => {
   // Obtenemos 'a' y 'b' de la URL (query parameters)
